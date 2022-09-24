@@ -1,10 +1,111 @@
-/*
+/* 
 Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
 
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  font-size: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 200 16px/1.5;
+  
+
+}
+
+#main-content {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 30% 30% 30%;
+  margin: 15vh;
+}
+
+#background {
+  position: absolute;
+  background-color: hsl(208deg 33% 45%);
+  height: 40%;
+}
+
+.phone-img{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+}
+
+#article-content {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  margin: 0 auto;
+
+}
+.article-main {
+  width: 100%;
+  height: 70%;
+}
+
+#insta-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.insta-logo{
+  justify-content: flex-start;
+  width: 50%;
+}
+
+#insta-login button{
+  width: 20%;
+  height: 10%;
+  background-color: #6b8fae;
+  border: 0;
+  box-shadow: 0 1px 5px black;
+  align-items: center;
+  border-radius: 3px;
+}
+.article-main {
+
+  background-image: ult('../images/brand.png');
+  background-color: white;
+  box-shadow: 0 0 15px grey;
+  border-radius: 5px;
+  padding: 5%;
+
+  
+}
+
+.article-main h1 {
+  font-size: 2rem;
+  color: #06365f;
+  
+}
+.article-main p {
+  font-size: 1.5rem;
+}
+
+.buttons-bot {
+  display: flex;
+  width: 100%;
+  
+  
+}
+
+.buttons-bot button{
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  
+  
+}
+
+footer {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding: 3vh;
+  font-size: 1.1rem;
+}
+
+footer li{
+  gap: 15px;
+
 }
