@@ -83,19 +83,22 @@ body {
 }
 
 .buttons-bot {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% 60%;
   width: 100%;
   
   
 }
 
 .buttons-bot button{
-  display: flex;
-  justify-content: space-evenly;
-  width: 30%;
+ justify-items: center;
+ margin: 20px auto;
+ margin-right: 15px;
+  
   
   
 }
+
 
 footer {
   grid-column-start: 2;
